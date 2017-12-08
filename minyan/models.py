@@ -43,4 +43,7 @@ class MinchaMaariv(models.Model):
     minyan = models.ForeignKey(MinyanInfo, on_delete=models.CASCADE)
     minchamaariv = models.BooleanField()
 
-
+class Shiva(models.Model):
+    niftar_english = models.CharField(max_length=30)
+    niftar_hebrew = models.CharField(max_length=60)
+    mishnayos_url = models.URLField()
